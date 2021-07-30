@@ -105,7 +105,7 @@ button.addEventListener('click', () => {
         })
 
     },()=>{
-        console.log('Some Error occured');
+        alert('Some Error occured');
         button.removeAttribute('disabled')
     },{timeout:10000})
 })
