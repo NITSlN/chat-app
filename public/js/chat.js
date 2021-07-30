@@ -104,9 +104,13 @@ button.addEventListener('click', () => {
             console.log('Location shared')
         })
 
-    })
+    },()=>{
+        console.log('Some Error occured');
+        button.removeAttribute('disabled')
+    },{timeout:10000})
 })
 
+// getCurrentPosition(successCallback,errorCallback,);
 
 // query
 const { username, room } = Qs.parse(location.search, { ignoreQueryPrefix: true })
