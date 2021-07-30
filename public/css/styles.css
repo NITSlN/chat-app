@@ -101,7 +101,7 @@ button:disabled {
     color: white;
     background: #333744;
     min-width: 18%;
-    overflow-y: scroll
+    overflow-y: auto
 } 
 .chat__sidebar h2{
     margin-bottom: 0px;
@@ -136,7 +136,8 @@ button:disabled {
     flex-grow: 1;
     padding: 24px 24px 0 24px;
     color: gray;
-    overflow-y: scroll;
+    overflow-y: auto;
+    scrollbar-color: purple;
 } 
 
 /* Message Styles */
@@ -214,3 +215,18 @@ button:disabled {
     font-weight: 300;
     padding: 12px 24px 0 24px;
 } 
+
+
+
+
+::-webkit-scrollbar{
+    width: 7px;
+}
+::-webkit-scrollbar-thumb{
+    background:linear-gradient(black,#8a2be2);
+    border-radius: 6px;
+}
+
+/* @media(max-width: 458px) {
+  
+  } */
